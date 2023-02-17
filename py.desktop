@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version= 1.0
+Icon= /home/hergo/repos/e1rm-desktop-app/barbell-icon.png
+Name= E1RM Calculator
+Exec=//home/hergo/repos/e1rm-desktop-app/main.py
+Terminal=true
+Type=Application

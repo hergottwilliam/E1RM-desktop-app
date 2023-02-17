@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 
 from calculator import calc_e1rm
 
-sg.theme('BluePurple')
+sg.theme('Black')
 
 # layout:
 # message
