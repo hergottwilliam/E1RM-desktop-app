@@ -14,11 +14,10 @@ from calculator import calc_e1rm
 
 layout = [
 [sg.Text("Calculate your estimated 1-rep-max(e1rm) for a barbell exercise")],
-[sg.Text("Weight (lbs):"), sg.InputText()],
-[sg.Text("# of repetitions:"), sg.InputText()],
-[sg.Text("(Optional) How many more reps could you have done:"), sg.InputText()],
-[sg.Button("Calculate")],
-[sg.Text("1 rep max = {e1rm}")]
+[sg.Text("Weight (lbs):", size=(40,1)), sg.InputText()],
+[sg.Text("# of repetitions:", size=(40,1)), sg.InputText()],
+[sg.Text("How many more reps could you have done:", size=(40,1)), sg.InputText()],
+[sg.Button("Calculate")]
 ]
 
 # create a window
@@ -27,7 +26,13 @@ window = sg.Window("1 Rep Max Calculator", layout)
 # create an event loop
 while True:
     event, values = window.read()
-    # exit if window closes or button is pressed
+    #
+    if event == "Calculate":
+        estimate = calc_e1rm(float(values[1]), float(values[0]), float(values[2]))
+        print(f"1 rep max = {estimate}")
+
+    
+    # exit if window closes
     if event == sg.WIN_CLOSED:
         break
 
