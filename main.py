@@ -2,6 +2,7 @@ import PySimpleGUI as sg
 
 from calculator import calc_e1rm
 
+sg.theme('BluePurple')
 
 # layout:
 # message
@@ -10,7 +11,6 @@ from calculator import calc_e1rm
 # RIR(optional): input
 # calculate button
 # print e1rm
-
 
 layout = [
 [sg.Text("Calculate your estimated 1-rep-max(e1rm) for a barbell exercise")],
@@ -29,9 +29,8 @@ while True:
     #
     if event == "Calculate":
         estimate = calc_e1rm(float(values[1]), float(values[0]), float(values[2]))
-        print(f"1 rep max = {estimate}")
-
-    
+        sg.popup("Estimated 1 rep max:", estimate)
+        
     # exit if window closes
     if event == sg.WIN_CLOSED:
         break
