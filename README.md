@@ -1,6 +1,6 @@
-# E1RM-desktop-app
+# estimated-one-rep-max-calculator
 
-The e1rm desktop app is a python script that is executable via a desktop icon. This program calculates the users
+A python script that is executable via a desktop icon. This program calculates the users
 estimated one rep max (e1rm) for a barbell exercise, based on data from a recent set that they have done.
 
 main.py: main python script that utilizes pysimplegui to create a GUI and execute the program
