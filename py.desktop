@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version= 1.0
-Icon= /home/hergo/repos/e1rm-desktop-app/barbell-icon.png
+Icon= /home/hergo/repos/estimated-one-rep-maximum/barbell-icon.png
 Name= E1RM Calculator
-Exec=/usr/bin/env python3 /home/hergo/repos/e1rm-desktop-app/main.py
-Terminal=true
+Exec=/usr/bin/env python3 /home/hergo/repos/estimated-one-rep-maximum/main.py
+Terminal=False
 Type=Application

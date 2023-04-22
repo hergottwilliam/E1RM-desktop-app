@@ -2,7 +2,8 @@ import PySimpleGUI as sg
 
 from calculator import calc_e1rm
 
-sg.theme('Black')
+# (optional) add a theme by adding an argument to sg.theme()
+sg.theme()
 
 # layout:
 # message
@@ -21,7 +22,7 @@ layout = [
 ]
 
 # create a window
-window = sg.Window("1 Rep Max Calculator", layout)
+window = sg.Window("E1RM Calculator", layout)
 
 # create an event loop
 while True:
